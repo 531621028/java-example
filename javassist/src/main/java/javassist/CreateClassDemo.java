@@ -4,7 +4,7 @@ package javassist;
  * @author kang
  * @date 2022/11/8
  */
-public class JavassistDemo {
+public class CreateClassDemo {
 
     public static void createPerson() throws Exception {
         ClassPool pool = ClassPool.getDefault();
