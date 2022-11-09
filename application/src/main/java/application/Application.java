@@ -8,6 +8,7 @@ public class Application {
         System.out.println("main start");
         try {
             while (true) {
+                new UserService().eat();
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {

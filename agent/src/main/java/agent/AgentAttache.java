@@ -22,7 +22,7 @@ public class AgentAttache {
             //如果虚拟机的名称为 xxx 则 该虚拟机为目标虚拟机，获取该虚拟机的 pid
             //然后加载 agent.jar 发送给该虚拟机
             System.out.println(vmd.displayName());
-            if (vmd.displayName().endsWith("WorkbenchApiApplication")) {
+            if (vmd.displayName().endsWith("Application")) {
                 VirtualMachine virtualMachine = VirtualMachine.attach(vmd.id());
                 virtualMachine.loadAgent("D:\\study\\java-example\\agent\\target\\agent-1.0-SNAPSHOT.jar");
                 virtualMachine.detach();
