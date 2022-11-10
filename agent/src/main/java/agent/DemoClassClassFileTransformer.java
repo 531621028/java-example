@@ -54,7 +54,7 @@ public class DemoClassClassFileTransformer implements ClassFileTransformer {
                     "opTime = (endTime-startTime)/1000;");
 
                 endBlock.append(
-                    "System.out.println(\"[Application] Withdrawal operation completed in:" +
+                    "System.out.println(\"eat completed in:" +
                         "\" + opTime + \" seconds!\");");
 
                 m.insertAfter(endBlock.toString());
