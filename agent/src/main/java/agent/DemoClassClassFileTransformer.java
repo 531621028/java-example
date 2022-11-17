@@ -33,7 +33,7 @@ public class DemoClassClassFileTransformer implements ClassFileTransformer {
             System.out.println("className not same " + className);
             return byteCode;
         }
-        if (loader.equals(targetClassLoader)) {
+        if (targetClassLoader == null || loader.equals(targetClassLoader)) {
             System.out.println("[Agent] Transforming class");
             try {
                 ClassPool cp = ClassPool.getDefault();
@@ -61,7 +61,7 @@ public class DemoClassClassFileTransformer implements ClassFileTransformer {
 
                 byteCode = cc.toBytecode();
                 cc.detach();
-            } catch (NotFoundException | CannotCompileException | IOException e) {
+            } catch (CannotCompileException | IOException | NotFoundException e) {
                 System.out.println("Exception" + e);
             }
         }
