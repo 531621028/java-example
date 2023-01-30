@@ -5,7 +5,7 @@ import java.lang.instrument.Instrumentation;
 public class DynamicAgent {
 
     public static void agentmain(String agentArgs, Instrumentation instrumentation) {
-        // 此处的代码运行在被绑定的应用的JVM进程上，也就是在Application的进程中输出attach JVM success，所以相关的依赖和配置是被绑定应用数据
+        // 此处的代码运行在被绑定的应用的JVM进程上，也就是在Application的进程中输出attach JVM success，新增的依赖只要可以被JVM正确加载就能够执行
         System.out.println("attach JVM success:");
         if (instrumentation.isRetransformClassesSupported()) {
             transformClass("application.UserService", instrumentation);

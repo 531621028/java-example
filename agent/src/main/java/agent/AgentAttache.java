@@ -24,7 +24,7 @@ public class AgentAttache {
             System.out.println(vmd.displayName());
             if (vmd.displayName().endsWith("Application")) {
                 VirtualMachine virtualMachine = VirtualMachine.attach(vmd.id());
-                virtualMachine.loadAgent("D:\\study\\java-example\\agent\\target\\agent-1.0-SNAPSHOT.jar");
+                virtualMachine.loadAgent("D:\\study\\java-example\\agent\\target\\agent-1.0-SNAPSHOT-jar-with-dependencies.jar");
                 virtualMachine.detach();
             }
         }
