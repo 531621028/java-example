@@ -35,28 +35,28 @@
         <!--            ${project.artifactId}-${project.version}_${maven.build.timestamp}-->
         <!--        </finalName>-->
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-jar-plugin</artifactId>-->
-<!--                <version>3.1.0</version>-->
-<!--                <configuration>-->
-<!--                    <archive>-->
-<!--                        &lt;!&ndash;自动添加META-INF/MANIFEST.MF &ndash;&gt;-->
-<!--                        <manifest>-->
-<!--                            <addClasspath>true</addClasspath>-->
-<!--                        </manifest>-->
-<!--                        <manifestEntries>-->
-<!--&lt;!&ndash;                            <Premain-Class>agent.StaticAgent</Premain-Class>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <Can-Redefine-Classes>true</Can-Redefine-Classes>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <Can-Retransform-Classes>true</Can-Retransform-Classes>&ndash;&gt;-->
-<!--                            <Boot-Class-Path>javassist-3.21.0-GA.jar</Boot-Class-Path>-->
-<!--                            <Agent-Class>agent.DynamicAgent</Agent-Class>-->
-<!--                            <Can-Redefine-Classes>true</Can-Redefine-Classes>-->
-<!--                            <Can-Retransform-Classes>true</Can-Retransform-Classes>-->
-<!--                        </manifestEntries>-->
-<!--                    </archive>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-jar-plugin</artifactId>-->
+            <!--                <version>3.1.0</version>-->
+            <!--                <configuration>-->
+            <!--                    <archive>-->
+            <!--                        &lt;!&ndash;自动添加META-INF/MANIFEST.MF &ndash;&gt;-->
+            <!--                        <manifest>-->
+            <!--                            <addClasspath>true</addClasspath>-->
+            <!--                        </manifest>-->
+            <!--                        <manifestEntries>-->
+            <!--&lt;!&ndash;                            <Premain-Class>agent.StaticAgent</Premain-Class>&ndash;&gt;-->
+            <!--&lt;!&ndash;                            <Can-Redefine-Classes>true</Can-Redefine-Classes>&ndash;&gt;-->
+            <!--&lt;!&ndash;                            <Can-Retransform-Classes>true</Can-Retransform-Classes>&ndash;&gt;-->
+            <!--                            <Boot-Class-Path>javassist-3.21.0-GA.jar</Boot-Class-Path>-->
+            <!--                            <Agent-Class>agent.DynamicAgent</Agent-Class>-->
+            <!--                            <Can-Redefine-Classes>true</Can-Redefine-Classes>-->
+            <!--                            <Can-Retransform-Classes>true</Can-Retransform-Classes>-->
+            <!--                        </manifestEntries>-->
+            <!--                    </archive>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -68,9 +68,9 @@
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
-                            <!--                            <Premain-Class>agent.StaticAgent</Premain-Class>-->
-                            <!--                            <Can-Redefine-Classes>true</Can-Redefine-Classes>-->
-                            <!--                            <Can-Retransform-Classes>true</Can-Retransform-Classes>-->
+                            <Premain-Class>agent.StaticAgent</Premain-Class>
+                            <Can-Redefine-Classes>true</Can-Redefine-Classes>
+                            <Can-Retransform-Classes>true</Can-Retransform-Classes>
                             <Boot-Class-Path>javassist-3.21.0-GA.jar</Boot-Class-Path>
                             <Agent-Class>agent.DynamicAgent</Agent-Class>
                             <Can-Redefine-Classes>true</Can-Redefine-Classes>

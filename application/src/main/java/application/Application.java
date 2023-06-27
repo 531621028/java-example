@@ -2,8 +2,8 @@ package application;
 
 public class Application {
 
-    // java -javaagent:D:\study\java-instrumentation\agent\target\agent-1.0-SNAPSHOT.jar -jar D:\study\java-instrumentation\age
-    // nt\target\application-1.0-SNAPSHOT.jar
+    // java -javaagent:D:\study\java-example\agent\target\agent-1.0-SNAPSHOT-jar-with-dependencies.jar -jar D:\study\java-example\appli
+    // cation\target\application-1.0-SNAPSHOT.jar
     public static void main(String[] args) {
         System.out.println("main start");
         try {
